@@ -38,11 +38,11 @@
                 <h5>Front-end Developer</h5>
             </div>
 
-            <div id="arrow">
-                <i class="fas fa-sort-down"></i>
+            <div onclick="displayAbout()" id="arrow">
+                <i id="animation" class="fas fa-sort-down"></i>
             </div>
 
-            <div id="about-me">
+            <div style="display: none;" id="about-me">
                 <p> 
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                     Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
@@ -60,11 +60,16 @@
                     <button>enviar!</button>
                 </form>
             </div>
-
-
-
         </section>
-
     </main>
+
+    <script>
+        function displayAbout() {
+            var arrow = document.getElementById('animation');
+            arrow.classList.toggle('rotate');
+            var display = document.getElementById('about-me');
+            display.classList.toggle('active');
+        }
+    </script>
 </body>
 </html>
