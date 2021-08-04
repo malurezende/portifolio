@@ -7,8 +7,11 @@
 
 ul {
     list-style: none;
-    font-size: 30px;    
+    font-size: 25px; 
+}
 
+li {
+    padding: 5px;
 }
 
 a {
@@ -20,8 +23,26 @@ body {
     height: 100vh;
 }
 
+header {
+    box-shadow: 1px 1px 10px 1px black;
+}
+
+header ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 20px 30px 20px 0 ; 
+}
+
+header ul li a:hover {
+    color: #fefefe;
+    transition: 300ms;
+    cursor: pointer;
+}
+
 .container-main {
     text-align: center;
+    margin-top: 150px;
 }
 
 .container-main  h1 {
@@ -29,9 +50,47 @@ body {
 }
 
 .container-main h5 {
-    font-size: 27px;
+    font-size: 26px;
     font-weight: 300;
+    margin: 15px 0;
 }
 
+#about-me p {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form {
+    width: 40%;
+    margin: 50px auto;
+    padding: 15px;
+}
+
+.form p {
+    margin-bottom: 10px;
+}
+
+.form input {
+    width: 50%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px 0px 0px 5px;
+}
+
+.form button {
+    width: 15%;
+    padding: 10px;
+    background-color: #D16BA5;
+    font-weight: 600;
+    border: none;
+    border-radius: 0px 5px 5px 0px;
+    cursor: pointer;
+    margin-left: -5px;
+}
+
+.form button:hover {
+    background-color: #5FFBF1;
+    transition: 300ms;
+}
 
 
